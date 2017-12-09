@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "get_mac"
-  s.version     = "GetMac::Version"
+  s.version     = "GetMac::VERSION"
   s.date        = "2017-12-09"
   s.summary     = "Generate unique MAC addresses"
   s.description = "A simple program to generage MAC addresses"
