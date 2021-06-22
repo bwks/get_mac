@@ -1,10 +1,8 @@
 # Ruby application to generate unique MAC addresses.
 
-### WARNING DOES NOT CURRENTLY WORK
-
 ### Overview
 I dont know much about Ruby, but I really like using Vagrant and find it usefull to know something about it.  
-This is my first Ruby 'application' so dont expect to much, it just generates random unique MAC addresses.  
+This is my first Ruby 'application' so dont expect to much, it just generates an array random unique MAC addresses.  
 I use this with Vagrant and the libvirt provider.
 
 ### Installation
@@ -25,17 +23,12 @@ gem install ./get_mac-0.0.1.gem
 ```
 
 ### Usage
-MAC addresses are generated with an OUI of `28:b7:ad`.
+The optional parameter sets the number of MAC addresses to be generated.
+These are returned in an array.
 ```ruby
-require GetMac
+require 'Mac'
 
-GetMac.get_mac()
-"28:b7:ad:5f:ce:9a"
-```
-
- You can specify your own OUI like this.
-```ruby
-GetMac.get_mac("54:52:00")
-"54:52:00:ce:95:66"
+mac = Mac.new
+puts mac.generate(10)
 ```
 
