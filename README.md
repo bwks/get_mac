@@ -8,7 +8,7 @@ I use this with Vagrant and the libvirt provider.
 ### Installation
 I have not added this as a gem package yet and possibly never will. 
 ```
-git clone git@github.com:bobthebutcher/get_mac.git
+git clone git@github.com:8radm1n/get_mac.git
 
 cd get_mac
 
@@ -16,10 +16,10 @@ gem build get_mac.gemspec
  
   Successfully built RubyGem
   Name: get_mac
-  Version: 0.0.1
-  File: get_mac-0.0.1.gem
+  Version: 0.0.2
+  File: get_mac-0.0.2.gem
 
-gem install ./get_mac-0.0.1.gem
+gem install ./get_mac-0.0.2.gem
 ```
 
 ### Usage
@@ -32,3 +32,6 @@ mac = Mac.new
 puts mac.generate(10)
 ```
 
+# Contributors
+Thanks to the wonderful:  
+@gregohardy
